@@ -15,66 +15,67 @@
   </head>
   <body>
     <script>
+
+      function playerChoice() {
         let playerChoice = prompt("Choose your weapon !!");
         playerChoice.toLowerCase();
         playerChoice.trim();
-        
-        function getComputerChoice() {
-            choices = ["rock" , "paper" , "scissors"];
-            let number = Math.floor(Math.random() * choices.length);
-            return choices[number];
-        }
-  
-        let computerChoice = getComputerChoice();
+        return playerChoice;
 
+      }
+      
 
-        function game(playerChoice , computerChoice) {
-            if (playerChoice == "rock" && computerChoice == "paper") {
-                 console.log("Machine Wins! paper beats rock.")
-            }
-            else if (playerChoice == "paper" && computerChoice =="rock") {
-                console.log("You Win! paper beats rock.")
-            }
-            else if (playerChoice == "scissors" && computerChoice == "paper") {
-                console.log("You Win! scissors beats paper")
-            }
-            else if (playerChoice == "paper" && computerChoice == "scissors") {
-                console.log("Machine Wins! scissors beats paper")
-            }
-            else if (playerChoice == "rock" && computerChoice == "scissors") {
-                console.log("You Win! rock beats scissors")
-            } 
-            else if (playerChoice == "scissors" && computerChoice=="rock") {
-                console.log("Machine Wins! rock  beats scissors.")
-            }
-            else if (playerChoice == computerChoice) {
-                console.log ("Your weapons clashed ! Draw ")
-            }
-            else {
-              console.log("Have you never played rock paper scissors ????!!!")
-            }
+      function getComputerChoice() {
+        choices = ["rock", "paper", "scissors"];
+        let number = Math.floor(Math.random() * choices.length);
+        return choices[number];
+      }
 
-            }
+      
 
-            game(playerChoice , computerChoice);
+      function game(playerChoice, computerChoice) {
+        if (playerChoice == "rock" && computerChoice == "paper") {
+          console.log("Machine Wins! paper beats rock.");
+        } else if (playerChoice == "paper" && computerChoice == "rock") {
+          console.log("You Win! paper beats rock.");
+        } else if (playerChoice == "scissors" && computerChoice == "paper") {
+          console.log("You Win! scissors beats paper");
+        } else if (playerChoice == "paper" && computerChoice == "scissors") {
+          console.log("Machine Wins! scissors beats paper");
+        } else if (playerChoice == "rock" && computerChoice == "scissors") {
+          console.log("You Win! rock beats scissors");
+        } else if (playerChoice == "scissors" && computerChoice == "rock") {
+          console.log("Machine Wins! rock  beats scissors.");
+        } else if (playerChoice == computerChoice) {
+          console.log("Your weapons clashed ! Draw ");
+        } else {
+          console.log("Have you never played rock paper scissors ????!!!");
+        }      
+      }
 
+      game(playerChoice(), getComputerChoice());
+      game(playerChoice(), getComputerChoice());
+      game(playerChoice(), getComputerChoice());
+      game(playerChoice(), getComputerChoice());
+      game(playerChoice(), getComputerChoice());
+      
     </script>
     <div class="main-wrapper">
-      <div class="header-container" >
+      <div class="header-container">
         <div class="logo">Lobby</div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Spin Wheel</a></li>
           <li><a href="#">Casino</a></li>
         </ul>
       </div>
-      
+
       <div class="content-container">
         <h1>Welcome to ROCK PAPER SCISSORS</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui
-          perferendis nulla ullam obcaecati omnis facilis sit aliquam,
-          asperiores quae.
+          Feeling lucky? Try your luck here! You have a 1 in 3 chance to win the
+          game. More reward means more risk. Entry Fees are trippled in this
+          game!! Good Luck! :)
         </p>
       </div>
       <div class="game-container">
