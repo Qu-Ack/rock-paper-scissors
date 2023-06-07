@@ -1,0 +1,106 @@
+body {
+    margin:0;
+    padding:0;
+    background:black;
+    color:#BC13FE;
+    font-family: 'Tilt Neon', cursive;
+}
+
+
+.main-wrapper {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px;
+    filter:brightness(200%);
+    border-bottom: #BC13FE solid 1px;
+}
+
+.logo {
+    font-size: 32px;
+    margin-left: 32px;
+    font-weight: 300;
+    text-shadow: 0 0 0.5em #BC13FE;
+    
+}
+
+
+
+.header-container ul {
+    margin:0;
+    padding:0;
+    display:flex;
+    list-style: none;
+    gap:16px;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.header-container a {
+    text-shadow: 0 0 0.25em #ffffff;
+
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 18px;
+    padding:8px;
+
+}
+
+.header-container a:hover {
+    background: black;
+    border-radius: 10px;
+    border:#BC13FE 2px solid;
+    box-shadow: 0 0 0.5em #BC13FE;
+    
+}
+
+
+.content-container {
+    display:flex;
+    flex-direction:column;
+    padding:16px;
+    width:512px;
+}
+
+.content-container h1 {
+    margin-left: 32px;
+    margin-top: 64px;
+    text-shadow: 0 0 0.5em #BC13FE;
+    filter: brightness(200%);
+}
+
+.content-container p {
+    color:#ffffff;
+    margin-left: 32px;
+    text-shadow: 0 0 0.5em #ffffff;
+}
+
+.game-container {
+    display:flex;
+    justify-content: center;
+    min-height: 500px;
+    padding:32px;
+}
+
+.game {
+    font-size: 18px;
+    text-shadow: 0 0 0.5em #BC13FE;
+    filter: brightness(200%);
+}
+.footer {
+    min-height: 20px;
+    border-top: #BC13FE solid 1px;
+    padding:8px;
+    color: #BC13FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 0.5em #BC13FE;
+    filter: brightness(200%);
+}
